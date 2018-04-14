@@ -32,7 +32,7 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/JhipsterMonolithicSample?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://localhost:3306/jhipster_monolithic_sample?useUnicode=true&characterEncoding=utf8&useSSL=false
         username: root
         password:
         hikari:
@@ -53,8 +53,8 @@ spring:
             hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.NoDefaultJCacheRegionFactory
     data:
         elasticsearch:
-            cluster-name:
-            cluster-nodes: localhost:9300
+            cluster-name: elasticsearch_cluster
+            cluster-nodes: 117.48.202.155:9300
             properties:
                 path:
                     logs: target/elasticsearch/log
