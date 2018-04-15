@@ -1,3 +1,13 @@
+// dto * with mapstruct
+// service * with serviceImpl
+// paginate * with pagination
+// search * with elasticsearch
+
 entity A
 
-skipClient A
+dto * with mapstruct
+service * with serviceImpl
+paginate * with pagination
+search * with elasticsearch
+
+skipClient all
