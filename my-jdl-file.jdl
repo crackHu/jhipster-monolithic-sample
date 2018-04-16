@@ -1,7 +1,14 @@
+// https://www.jhipster.tech/creating-an-entity/
 // dto * with mapstruct
 // service * with serviceImpl
 // paginate * with pagination
 // search * with elasticsearch
+
+// https://www.jhipster.tech/creating-a-spring-controller/
+// jhipster spring-controller Foo
+
+// https://www.jhipster.tech/creating-a-spring-service/
+// jhipster spring-service Bar
 
 entity A
 
