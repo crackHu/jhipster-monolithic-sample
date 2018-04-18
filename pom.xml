@@ -553,10 +553,12 @@
                     <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                     <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                     <driver>com.mysql.jdbc.Driver</driver>
-                    <url>jdbc:mysql://localhost:3306/JhipsterMonolithicSample</url>
-                    <defaultSchemaName>JhipsterMonolithicSample</defaultSchemaName>
+                    <url>jdbc:mysql://localhost:3306/jhipster_monolithic_sample</url>
+                    <!--<url>jdbc:mysql://117.48.202.155:8066/jhipster_monolithic_sample</url>-->
+                    <defaultSchemaName>jhipster_monolithic_sample</defaultSchemaName>
                     <username>root</username>
                     <password></password>
+                    <!--<password>654321</password>-->
                     <referenceUrl>hibernate:spring:com.hustack.sample.domain?dialect=org.hibernate.dialect.MySQL5InnoDBDialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>

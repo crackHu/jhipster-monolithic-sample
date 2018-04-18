@@ -26,7 +26,7 @@
                 <constraints nullable="false" />
             </column>
 
-            <column name="phone" type="integer">
+            <column name="phone" type="double">
                 <constraints nullable="true" />
             </column>
 

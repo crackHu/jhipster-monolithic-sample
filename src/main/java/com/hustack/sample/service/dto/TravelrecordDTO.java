@@ -14,7 +14,7 @@ public class TravelrecordDTO implements Serializable {
     @NotNull
     private String name;
 
-    private Integer phone;
+    private Double phone;
 
     public Long getId() {
         return id;
@@ -32,11 +32,11 @@ public class TravelrecordDTO implements Serializable {
         this.name = name;
     }
 
-    public Integer getPhone() {
+    public Double getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(Double phone) {
         this.phone = phone;
     }
 

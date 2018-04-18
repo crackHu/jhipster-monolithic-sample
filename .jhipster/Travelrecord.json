@@ -9,7 +9,7 @@
         },
         {
             "fieldName": "phone",
-            "fieldType": "Integer"
+            "fieldType": "Double"
         }
     ],
     "relationships": [],

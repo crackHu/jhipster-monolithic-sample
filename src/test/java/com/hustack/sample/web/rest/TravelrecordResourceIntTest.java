@@ -52,8 +52,8 @@ public class TravelrecordResourceIntTest {
     private static final String DEFAULT_NAME = "AAAAAAAAAA";
     private static final String UPDATED_NAME = "BBBBBBBBBB";
 
-    private static final Integer DEFAULT_PHONE = 1;
-    private static final Integer UPDATED_PHONE = 2;
+    private static final Double DEFAULT_PHONE = 1D;
+    private static final Double UPDATED_PHONE = 2D;
 
     @Autowired
     private TravelrecordRepository travelrecordRepository;
@@ -197,7 +197,7 @@ public class TravelrecordResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(travelrecord.getId().intValue())))
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
-            .andExpect(jsonPath("$.[*].phone").value(hasItem(DEFAULT_PHONE)));
+            .andExpect(jsonPath("$.[*].phone").value(hasItem(DEFAULT_PHONE.doubleValue())));
     }
     
 
@@ -213,7 +213,7 @@ public class TravelrecordResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
             .andExpect(jsonPath("$.id").value(travelrecord.getId().intValue()))
             .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
-            .andExpect(jsonPath("$.phone").value(DEFAULT_PHONE));
+            .andExpect(jsonPath("$.phone").value(DEFAULT_PHONE.doubleValue()));
     }
 
     @Test
@@ -313,7 +313,7 @@ public class TravelrecordResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(travelrecord.getId().intValue())))
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
-            .andExpect(jsonPath("$.[*].phone").value(hasItem(DEFAULT_PHONE)));
+            .andExpect(jsonPath("$.[*].phone").value(hasItem(DEFAULT_PHONE.doubleValue())));
     }
 
     @Test

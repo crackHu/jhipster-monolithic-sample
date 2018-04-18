@@ -12,7 +12,7 @@
 
 entity Travelrecord {
 	name String required,
-    phone Integer
+    phone Double
 }
 
 entity Company {
@@ -53,4 +53,4 @@ service * with serviceImpl
 paginate * with pagination
 search * with elasticsearch
 
-skipClient all
+// skipClient all

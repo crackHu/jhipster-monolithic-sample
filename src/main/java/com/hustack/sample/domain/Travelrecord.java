@@ -30,7 +30,7 @@ public class Travelrecord implements Serializable {
     private String name;
 
     @Column(name = "phone")
-    private Integer phone;
+    private Double phone;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
@@ -54,16 +54,16 @@ public class Travelrecord implements Serializable {
         this.name = name;
     }
 
-    public Integer getPhone() {
+    public Double getPhone() {
         return phone;
     }
 
-    public Travelrecord phone(Integer phone) {
+    public Travelrecord phone(Double phone) {
         this.phone = phone;
         return this;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(Double phone) {
         this.phone = phone;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
