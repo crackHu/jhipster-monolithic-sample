@@ -1,0 +1,23 @@
+
+{
+    "jhipsterMonolithicSampleApp": {
+        "hotnews" : {
+            "home": {
+                "title": "Hotnews",
+                "createLabel": "创建新 Hotnews",
+                "createOrEditLabel": "创建或编辑 Hotnews",
+                "search": "查找 Hotnews"
+            },
+            "created": "Hotnews {{ param }} 创建成功",
+            "updated": "Hotnews {{ param }} 更新成功",
+            "deleted": "Hotnews {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Hotnews {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Hotnews"
+            },
+            "name": "Name"
+        }
+    }
+}

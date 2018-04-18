@@ -1,0 +1,24 @@
+
+{
+    "jhipsterMonolithicSampleApp": {
+        "travelrecord" : {
+            "home": {
+                "title": "Travelrecords",
+                "createLabel": "Create a new Travelrecord",
+                "createOrEditLabel": "Create or edit a Travelrecord",
+                "search": "Search for Travelrecord"
+            },
+            "created": "A new Travelrecord is created with identifier {{ param }}",
+            "updated": "A Travelrecord is updated with identifier {{ param }}",
+            "deleted": "A Travelrecord is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Travelrecord {{ id }}?"
+            },
+            "detail": {
+                "title": "Travelrecord"
+            },
+            "name": "Name",
+            "phone": "Phone"
+        }
+    }
+}

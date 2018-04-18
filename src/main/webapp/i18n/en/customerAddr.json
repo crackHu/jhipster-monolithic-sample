@@ -1,0 +1,23 @@
+
+{
+    "jhipsterMonolithicSampleApp": {
+        "customerAddr" : {
+            "home": {
+                "title": "Customer Addrs",
+                "createLabel": "Create a new Customer Addr",
+                "createOrEditLabel": "Create or edit a Customer Addr",
+                "search": "Search for Customer Addr"
+            },
+            "created": "A new Customer Addr is created with identifier {{ param }}",
+            "updated": "A Customer Addr is updated with identifier {{ param }}",
+            "deleted": "A Customer Addr is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Customer Addr {{ id }}?"
+            },
+            "detail": {
+                "title": "Customer Addr"
+            },
+            "customerId": "Customer Id"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+{
+    "jhipsterMonolithicSampleApp": {
+        "hotnews" : {
+            "home": {
+                "title": "Hotnews",
+                "createLabel": "Create a new Hotnews",
+                "createOrEditLabel": "Create or edit a Hotnews",
+                "search": "Search for Hotnews"
+            },
+            "created": "A new Hotnews is created with identifier {{ param }}",
+            "updated": "A Hotnews is updated with identifier {{ param }}",
+            "deleted": "A Hotnews is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Hotnews {{ id }}?"
+            },
+            "detail": {
+                "title": "Hotnews"
+            },
+            "name": "Name"
+        }
+    }
+}

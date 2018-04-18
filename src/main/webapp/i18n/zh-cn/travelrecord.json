@@ -1,0 +1,24 @@
+
+{
+    "jhipsterMonolithicSampleApp": {
+        "travelrecord" : {
+            "home": {
+                "title": "Travelrecords",
+                "createLabel": "创建新 Travelrecord",
+                "createOrEditLabel": "创建或编辑 Travelrecord",
+                "search": "查找 Travelrecord"
+            },
+            "created": "Travelrecord {{ param }} 创建成功",
+            "updated": "Travelrecord {{ param }} 更新成功",
+            "deleted": "Travelrecord {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Travelrecord {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Travelrecord"
+            },
+            "name": "Name",
+            "phone": "Phone"
+        }
+    }
+}

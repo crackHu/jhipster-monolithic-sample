@@ -1,0 +1,23 @@
+
+{
+    "jhipsterMonolithicSampleApp": {
+        "customerAddr" : {
+            "home": {
+                "title": "Customer Addrs",
+                "createLabel": "创建新 Customer Addr",
+                "createOrEditLabel": "创建或编辑 Customer Addr",
+                "search": "查找 Customer Addr"
+            },
+            "created": "Customer Addr {{ param }} 创建成功",
+            "updated": "Customer Addr {{ param }} 更新成功",
+            "deleted": "Customer Addr {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Customer Addr {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Customer Addr"
+            },
+            "customerId": "Customer Id"
+        }
+    }
+}

@@ -87,6 +87,33 @@ export class Header extends React.Component<IHeaderProps, IHeaderState> {
   render() {
     const { currentLocale, isAuthenticated, isAdmin } = this.props;
     const entityMenuItems = [
+      <DropdownItem tag={Link} key="travelrecord" to="/entity/travelrecord">
+        <FaAsterisk />&nbsp; Travelrecord
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="company" to="/entity/company">
+        <FaAsterisk />&nbsp; Company
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="goods" to="/entity/goods">
+        <FaAsterisk />&nbsp; Goods
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="hotnews" to="/entity/hotnews">
+        <FaAsterisk />&nbsp; Hotnews
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="employee" to="/entity/employee">
+        <FaAsterisk />&nbsp; Employee
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="customer" to="/entity/customer">
+        <FaAsterisk />&nbsp; Customer
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="orders" to="/entity/orders">
+        <FaAsterisk />&nbsp; Orders
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="order-items" to="/entity/order-items">
+        <FaAsterisk />&nbsp; Order Items
+      </DropdownItem>,
+      <DropdownItem tag={Link} key="customer-addr" to="/entity/customer-addr">
+        <FaAsterisk />&nbsp; Customer Addr
+      </DropdownItem>,
       /* jhipster-needle-add-entity-to-menu - - JHipster will add entities to the menu here */
       <span key="dummy-placeholder" /> /* workaround to avoid error when there are no entities */
     ];
