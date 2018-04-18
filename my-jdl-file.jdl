@@ -10,7 +10,43 @@
 // https://www.jhipster.tech/creating-a-spring-service/
 // jhipster spring-service Bar
 
-entity A
+entity Travelrecord {
+	name String required,
+    phone Integer
+}
+
+entity Company {
+	name String required
+}
+
+entity Goods {
+	name String required
+}
+
+entity Hotnews {
+	name String required
+}
+
+entity Employee {
+	name String required,
+    shardingId Integer
+}
+
+entity Customer {
+    shardingId Integer
+}
+
+entity Orders {
+    customerId Integer
+}
+
+entity OrderItems {
+    orderId Integer
+}
+
+entity CustomerAddr {
+    customerId Integer
+}
 
 dto * with mapstruct
 service * with serviceImpl

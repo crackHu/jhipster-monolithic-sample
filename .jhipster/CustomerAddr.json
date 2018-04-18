@@ -1,0 +1,20 @@
+{
+    "fields": [
+        {
+            "fieldName": "customerId",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180418131657",
+    "entityTableName": "customer_addr",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "skipClient": true,
+    "searchEngine": "elasticsearch"
+}
