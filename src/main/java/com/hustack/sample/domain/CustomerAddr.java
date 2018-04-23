@@ -5,6 +5,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.elasticsearch.annotations.Document;
 import java.io.Serializable;
 import java.util.Objects;
@@ -21,7 +22,8 @@ public class CustomerAddr implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "IdWorker")
+    @GenericGenerator(name = "IdWorker", strategy = "com.hustack.sample.config.IdWorker")
     private Long id;
 
     @Column(name = "customer_id")
