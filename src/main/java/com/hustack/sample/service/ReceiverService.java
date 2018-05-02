@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.concurrent.CountDownLatch;
 
-public class Receiver {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Receiver.class);
+public class ReceiverService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(ReceiverService.class);
 
     private CountDownLatch latch;
 
     @Autowired
-    public Receiver(CountDownLatch latch) {
+    public ReceiverService(CountDownLatch latch) {
         this.latch = latch;
     }
 
