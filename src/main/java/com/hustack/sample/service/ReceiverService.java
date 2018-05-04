@@ -17,7 +17,9 @@ public class ReceiverService {
     }
 
     public void receiveMessage(String message) {
-        LOGGER.info("Received <" + message + ">");
         latch.countDown();
+        LOGGER.info("Received <" + message + "> {}", latch.getCount());
+        latch.countDown();
+        LOGGER.info("Received <" + message + "> {}", latch.getCount());
     }
 }

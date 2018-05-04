@@ -41,7 +41,7 @@ public class RedisConfiguration {
 
     @Bean
     CountDownLatch latch() {
-        return new CountDownLatch(1);
+        return new CountDownLatch(2);
     }
 
     @Bean
