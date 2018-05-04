@@ -53,6 +53,9 @@ spring:
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: true
             hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.NoDefaultJCacheRegionFactory
+    redis:
+        host: 117.48.202.155
+        password: renrenpm123
     data:
         elasticsearch:
             cluster-name: elasticsearch_cluster
