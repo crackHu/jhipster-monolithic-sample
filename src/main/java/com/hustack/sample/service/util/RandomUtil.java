@@ -38,4 +38,10 @@ public final class RandomUtil {
     public static String generateResetKey() {
         return RandomStringUtils.randomNumeric(DEF_COUNT);
     }
+
+    public static void main(String[] args) {
+        System.out.println(generateResetKey());
+        System.out.println(generateActivationKey());
+        System.out.println(generatePassword());
+    }
 }

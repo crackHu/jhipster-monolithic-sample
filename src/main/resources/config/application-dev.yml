@@ -56,6 +56,12 @@ spring:
     redis:
         host: 117.48.202.155
         password: renrenpm123
+    rabbitmq:
+        host: 117.48.202.155
+        port: 5672
+        username: admin
+        password: renrenpm123
+        publisher-confirms: true
     data:
         elasticsearch:
             cluster-name: elasticsearch_cluster

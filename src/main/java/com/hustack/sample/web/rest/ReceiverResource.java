@@ -1,7 +1,12 @@
 package com.hustack.sample.web.rest;
 
+import com.hustack.sample.config.RabbitMQConfiguration;
+import com.hustack.sample.service.util.RandomUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +30,8 @@ public class ReceiverResource {
     @Autowired
     StringRedisTemplate template;
     @Autowired
+    RabbitTemplate rabbitTemplate;
+    @Autowired
     CountDownLatch latch;
 
     @GetMapping("/receiver")
@@ -36,6 +43,13 @@ public class ReceiverResource {
         } catch (InterruptedException e) {
             LOGGER.error(e.getMessage(), e);
         }
+        return ResponseEntity.ok("ok");
+    }
+    @GetMapping("/receiver2")
+    public ResponseEntity<String> receiver2() {
+        CorrelationData correlationData = new CorrelationData(RandomUtil.generatePassword());
+        LOGGER.info("Sending {} ack message...", correlationData);
+        rabbitTemplate.convertAndSend(RabbitMQConfiguration.QUEUE, "","Hello from RabbitMQ!", correlationData);
         return ResponseEntity.ok("ok");
     }
 }
