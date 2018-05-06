@@ -49,7 +49,7 @@ public class ReceiverResource {
     public ResponseEntity<String> receiver2() {
         CorrelationData correlationData = new CorrelationData(RandomUtil.generatePassword());
         LOGGER.info("Sending {} ack message...", correlationData);
-        rabbitTemplate.convertAndSend(RabbitMQConfiguration.QUEUE, "","Hello from RabbitMQ!", correlationData);
+        rabbitTemplate.convertAndSend(RabbitMQConfiguration.EXCHANGE, "","Hello from RabbitMQ!", correlationData);
         return ResponseEntity.ok("ok");
     }
 }
