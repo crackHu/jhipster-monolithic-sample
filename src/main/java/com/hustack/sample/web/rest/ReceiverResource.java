@@ -32,6 +32,8 @@ public class ReceiverResource {
     @Autowired
     RabbitTemplate rabbitTemplate;
     @Autowired
+    AmqpTemplate amqpTemplate;
+    @Autowired
     CountDownLatch latch;
 
     @GetMapping("/receiver")
@@ -49,7 +51,10 @@ public class ReceiverResource {
     public ResponseEntity<String> receiver2() {
         CorrelationData correlationData = new CorrelationData(RandomUtil.generatePassword());
         LOGGER.info("Sending {} ack message...", correlationData);
-        rabbitTemplate.convertAndSend(RabbitMQConfiguration.EXCHANGE, "","Hello from RabbitMQ!", correlationData);
+        rabbitTemplate.convertAndSend(RabbitMQConfiguration.QUEUE, "Hello from RabbitMQ0!");
+        rabbitTemplate.convertAndSend(RabbitMQConfiguration.EXCHANGE, "","Hello from RabbitMQ1!", correlationData);
+        amqpTemplate.convertAndSend(RabbitMQConfiguration.QUEUE, "Hello from RabbitMQ4!");
+        amqpTemplate.convertAndSend(RabbitMQConfiguration.EXCHANGE, "","Hello from RabbitMQ3!");
         return ResponseEntity.ok("ok");
     }
 }
