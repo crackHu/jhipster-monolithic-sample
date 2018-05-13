@@ -1,4 +1,4 @@
-package com.hustack.sample.service;
+package com.hustack.sample.service.patterns;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * @author crack
  * @date 2018/04/30
+ * 生产者 - 消费者模式
  */
 public class WaitNotifyTest {
 
