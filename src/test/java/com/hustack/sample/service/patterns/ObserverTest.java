@@ -10,11 +10,10 @@ import java.util.Observer;
  */
 public class ObserverTest {
 
-//    public class Observer extends java.util.Observer {
-//        @Override
-//        public void update(Observable o, Object arg) {
-//            System.out.println(o);
-//            System.out.println(arg);
-//        }
-//    }
+    public class AbstractObserver implements Observer {
+        @Override
+        public void update(Observable o, Object arg) {
+
+        }
+    }
 }
