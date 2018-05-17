@@ -1,5 +1,7 @@
 package com.hustack.sample.service.patterns;
 
+import javassist.util.proxy.Proxy;
+
 import java.util.Observable;
 import java.util.Observer;
 
@@ -10,10 +12,11 @@ import java.util.Observer;
  */
 public class ObserverTest {
 
-    public class AbstractObserver implements Observer {
+    private class AbstractObserver implements Observer {
         @Override
         public void update(Observable o, Object arg) {
 
         }
     }
+
 }
